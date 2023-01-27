@@ -10,11 +10,18 @@
 <body>
   <header class="header">
     <div class="geo_container">
-      <img src="../Лендинг/assets/geo.png" class="geo">
-      <p class="spb">Санкт-Петербург<img src="./assets/Rectangle50.png" class="rectangle"></p>
+      <div class="geo"></div>
+        <select name="select" class="spb">
+          <option value="SPb" class="option">Санкт-Петербург</option>
+          <option value="Moscow" class="option">Москва</option>
+          <option value="NN" class="option">Нижний-Новгород</option>
+          <option value="Rostov" class="option">Ростов-на-Дону</option>
+        </select>
+        <img src="./assets/Rectangle50.png" class="rectangle">
     </div>
+  </div>
     <div class="phone_container">
-      <img src="../Лендинг/assets/phone.png" class="phone">
+      <div class="phone"></div>
       <p class="number">8 800 785-25-35</p>
     </div>
     <div class="jewelry_container">
@@ -26,11 +33,11 @@
       <a href="#" class="reg">&nbsp;Регистрация</a>
     </div>
     <div class="favorite_container">
-      <img src="../Лендинг/assets/favorite.png" class="favorite">
-      <img src="../Лендинг/assets/Elipse.png" class="elipse">
+      <img src="./assets/favorite.png" class="favorite">
+      <img src="./assets/Elipse.png" class="elipse">
     </div>
-    <img src="../Лендинг/assets/chart.png" class="chart">
-    <img src="../Лендинг/assets/bag.png" class="bag">
+    <img src="./assets/chart.png" class="chart">
+    <img src="./assets/bag.png" class="bag">
   </header>
   <nav class="nav">
     <a href="#" class="items">КАТАЛОГ</a>
@@ -50,12 +57,12 @@
     <div class="salesAndBtn">
       <p class="sales">Суперскидка до 60%</p>
       <p class="diamonds">НА БРИЛЛИАНТЫ</p>
-      <button class="info_btn">Подробнее</button>
+      <button class="info_btn" onclick="this.className = (this.className == 'info_btn' ? 'info_btn_pessed' : 'info_btn')">Подробнее</button>
       <img src="./assets/diamond.png" class="diamond">
     </div>
     <div class="arrows_container">
-      <img src="./assets/ComponentArrow1.png" class="arrow1">
-      <img src="./assets/ComponentArrow2.png" class="arrow2">
+      <img src="./assets/ComponentArrow1.png" class="arrow1" onclick="this.className = (this.className == 'arrow1' ? 'arrow1_pressed' : 'arrow1')">
+      <img src="./assets/ComponentArrow2.png" class="arrow2" onclick="this.className = (this.className == 'arrow2' ? 'arrow2_pressed' : 'arrow2')">
     </div>
   </main>
   <section>
@@ -89,22 +96,22 @@
   </section>
   <section>
     <p class="headlines">Распродажа</p>
-    <div class="btn_container">
-      <button class="btn_one">Кольца</button>
-      <button class="btns">Серьги</button>
-      <button class="btns"><span class="brs">Браслеты</span></button>
-      <button class="btns">Часы</button>
+    <div class="btn_container" id="myBtns">
+      <button class="btn active">Кольца</button>
+      <button class="btn">Серьги</button>
+      <button class="btn"><span class="brs">Браслеты</span></button>
+      <button class="btn">Часы</button>
     </div>
     <div class="arrows_container_two">
-      <img src="./assets/ComponentArrow3.png" class="arrow3">
-      <img src="./assets/ComponentArrow2.png" class="arrow2">
+      <img src="./assets/ComponentArrow1.png" class="arrow3" onclick="this.className = (this.className == 'arrow3' ? 'arrow3_pressed' : 'arrow3')">
+      <img src="./assets/ComponentArrow2.png" class="arrow2" onclick="this.className = (this.className == 'arrow2' ? 'arrow2_pressed' : 'arrow2')">
     </div>
     <div class="rings_sales">
       <div class="frame">
         <button class="btn_sale">Sale</button>
         <div class="likeEyes_container">
-          <img src="./assets/like.png" class="like">
-          <img src="./assets/eyes.png" class="eyes">
+          <div class="like" onclick="this.className = (this.className == 'like' ? 'like_pressed' : 'like')"></div>
+          <div class="eyes"></div>
         </div>
         <img src="./assets/ring_sale1.png" class="rings_sale">
         <div class="inp_radio">
@@ -119,13 +126,29 @@
           <p class="sale_num">41 000 ₽</p>
           <p class="sale_num_s"><s>65 000 ₽</s></p>
           <button class="orange_sale_btn">-45%</button>
-        </div>
+        </div><br>
         <p class="info_ring">Стильное кольцо из белого золота c бриллиантами</p>
+        <div class="dropdown">
+          <button onclick="dropdownMenu()" class="dropbtn">Белое золото</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Белое золото</a>
+              <a href="#">Желтое золото</a>
+              <a href="#">Серебро</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropdownSize()" class="dropbtn">Размер: 16</button>
+            <div id="myDropdownSize" class="dropdown-content">
+              <a href="#">Размер: 16</a>
+              <a href="#">Размер: 18</a>
+              <a href="#">Размер: 19,5</a>
+            </div>
+        </div>
       </div>
       <div class="frame">
         <div class="likeEyes_container_frame2">
-          <img src="./assets/like.png" class="like_frame2">
-          <img src="./assets/eyes.png" class="eyes_frame2">
+          <div class="like_frame2" onclick="this.className = (this.className == 'like_frame2' ? 'like_frame2_pressed' : 'like_frame2')"></div>
+          <div class="eyes_frame2"></div>
         </div>
         <img src="./assets/ring_sale2.png" class="rings_sale">
         <div class="inp_radio">
@@ -136,13 +159,29 @@
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
         </div>
-        <p class="sale_num">56 000 ₽</p>
+        <p class="sale_num">56 000 ₽</p><br>
         <p class="info_ring">Стильное кольцо из белого золота c бриллиантами</p>
+        <div class="dropdown">
+          <button onclick="dropdownMenuTwo()" class="dropbtn">Белое золото</button>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="#">Белое золото</a>
+              <a href="#">Желтое золото</a>
+              <a href="#">Серебро</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropdownSize2()" class="dropbtn">Размер: 17,5</button>
+            <div id="myDropdownSize2" class="dropdown-content">
+              <a href="#">Размер: 17,5</a>
+              <a href="#">Размер: 18</a>
+              <a href="#">Размер: 19</a>
+            </div>
+        </div> 
       </div>
       <div class="frame">
         <div class="likeEyes_container_frame3">
-          <img src="./assets/like.png" class="like_frame3">
-          <img src="./assets/eyes.png" class="eyes_frame3">
+          <div class="like_frame3" onclick="this.className = (this.className == 'like_frame3' ? 'like_frame3_pressed' : 'like_frame3')"></div>
+          <div class="eyes_frame3"></div>
         </div>
         <img src="./assets/ring_sale3.png" class="rings_sale">
         <div class="inp_radio">
@@ -153,13 +192,29 @@
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
         </div>
-        <p class="sale_num">37 500 ₽</p>
+        <p class="sale_num">37 500 ₽</p><br>
         <p class="info_ring">Стильное кольцо из белого золота c бриллиантами</p>
+        <div class="dropdown">
+          <button onclick="dropdownMenuThree()" class="dropbtn">Белое золото</button>
+            <div id="myDropdown3" class="dropdown-content">
+              <a href="#">Белое золото</a>
+              <a href="#">Желтое золото</a>
+              <a href="#">Серебро</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropdownSize3()" class="dropbtn">Размер: 16</button>
+            <div id="myDropdownSize3" class="dropdown-content">
+              <a href="#">Размер: 16</a>
+              <a href="#">Размер: 17</a>
+              <a href="#">Размер: 19,5</a>
+            </div>
+        </div>
       </div>
       <div class="frame">
         <div class="likeEyes_container_frame4">
-          <img src="./assets/like.png" class="like_frame4">
-          <img src="./assets/eyes.png" class="eyes_frame4">
+          <div class="like_frame4" onclick="this.className = (this.className == 'like_frame4' ? 'like_frame4_pressed' : 'like_frame4')"></div>
+          <div class="eyes_frame4"></div>
         </div>
         <img src="./assets/ring_sale4.png" class="rings_sale">
         <div class="inp_radio">
@@ -170,8 +225,24 @@
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
         </div>
-        <p class="sale_num">39 200 ₽</p>
+        <p class="sale_num">39 200 ₽</p><br>
         <p class="info_ring">Стильное кольцо из белого золота c бриллиантами</p>
+        <div class="dropdown">
+          <button onclick="dropdownMenuFour()" class="dropbtn">Белое золото</button>
+            <div id="myDropdown4" class="dropdown-content">
+              <a href="#">Белое золото</a>
+              <a href="#">Желтое золото</a>
+              <a href="#">Серебро</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="dropdownSize4()" class="dropbtn">Размер: 18</button>
+            <div id="myDropdownSize4" class="dropdown-content">
+              <a href="#">Размер: 18</a>
+              <a href="#">Размер: 18,5</a>
+              <a href="#">Размер: 19,5</a>
+            </div>
+        </div>
       </div>
     </div>
   </section>
@@ -224,26 +295,26 @@
             <img src="./assets/color4.png">
           </div>
           <p class="size">Размер</p>
-          <img src="./assets/question.png" class="question">
-          <div class="size_box">
-            <div class="box1">16,5</div>
-            <div class="box2">17,5</div>
-            <div class="box_3_6">18,5</div>
-            <div class="box_3_6">19</div>
-            <div class="box_3_6">19,5</div>
-            <div class="box_3_6">19,5</div>
-            <div class="box_3_6">18,5</div>
-            <div class="box_3_6">19</div>
-            <div class="box_last">19,5</div>
-            <div class="box_last">19,5</div>
+          <div class="question"></div>
+          <div class="size_box" id="myBox">
+            <div class="box boxact">16,5</div>
+            <div class="box">17,5</div>
+            <div class="box">18,5</div>
+            <div class="box">19</div>
+            <div class="box">19,5</div>
+            <div class="box">19,5</div>
+            <div class="box">18,5</div>
+            <div class="box">19</div>
+            <div class="box">19,5</div>
+            <div class="box">19,5</div>
           </div>
           <div class="buttons_symbals">
             <div class="btns_section3">
-              <button class="basket">в корзину</button>
-              <button class="one_click">купить в 1 клик</button>
+              <button class="basket" onclick="this.className = (this.className == 'basket' ? 'basket_pressed' : 'basket')">в корзину</button>
+              <button class="one_click" onclick="this.className = (this.className == 'one_click' ? 'one_click_pressed' : 'one_click')">купить в 1 клик</button>
             </div>
             <div class="icons_sect3">
-              <img src="./assets/like_sect3.png" class="like_sect3"><p class="like_chart_share">Сохранить</p>
+              <div class="like_sect3" onclick="this.className = (this.className == 'like_sect3' ? 'like_sect3_pressed' : 'like_sect3')"><p class="like_ic_s3">Сохранить</p></div>
               <img src="./assets/chart_sect3.png" class="chart_sect3"><p class="like_chart_share">Сравнить</p>
               <img src="./assets/share_sect3.png" class="share_sect3"><p class="like_chart_share">Поделиться</p>
             </div>
@@ -276,5 +347,6 @@
       <p class="info_article4">Как отличить золото от подделки:<br>10 практических советов</p>
     </div>
   </section>
+  <script src="./script.js"></script>
 </body>
 </html>
