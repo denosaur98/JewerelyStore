@@ -50,6 +50,9 @@
   -moz-appearance: none;
   appearance: none;
 }
+.spb:hover {
+  opacity: 0.7;
+}
 option:checked {
   background-color: #FAFAFA;
 }
@@ -1422,17 +1425,19 @@ option:checked {
   margin-bottom: 16px;
 }
 .chart_sect3 {
+  background-image: url('./assets/chart_sect3.png');
   cursor: pointer;
   margin-left: 5px;
-  width: 10px;
+  width: 13px;
   height: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .share_sect3 {
+  background-image: url('./assets/share_sect3.png');
   cursor: pointer;
   margin-left: 2px;
-  width: 15px;
-  height: 16.67px;
+  width: 18px;
+  height: 18.67px;
   margin-bottom: 16px;
 }
 .like_ic_s3 {
