@@ -62,7 +62,7 @@ option:checked {
   height: 6px;
 }
 .transition_arrow {
-  transition: all ease 0.4s;
+  transition: all ease 0.2s;
 }
 .phone_container {
   display: flex;
@@ -81,6 +81,8 @@ option:checked {
   height: 16px;
   margin-right: 10px;
   margin-left: 60px;
+  transition: all ease 0.3s;
+  opacity: 0.5;
 }
 .number {
   margin-top: 2px;
@@ -144,6 +146,11 @@ option:checked {
 .favorite_container {
   display: flex;
 }
+.favorite_container:hover {
+  display: flex;
+  transition: all ease 0.3s;
+  opacity: 0.5;
+}
 .favorite {
   cursor: pointer;
   width: 20px;
@@ -157,17 +164,48 @@ option:checked {
   margin-top: -7px;
   margin-right: 10px;
 }
+.header_imgs {
+  display: flex;
+  max-width: 32px;
+  max-height: 100%;
+}
 .chart {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  margin-right: 19px;
+  margin-right: 16.5px;
 }
-.bag {
+.chart:hover {
   cursor: pointer;
   width: 20px;
   height: 20px;
+  margin-right: 16.5px;
+  transition: all ease 0.3s;
+  opacity: 0.5;
+}
+.bag {
+  cursor: pointer;
+  background-image: url('./assets/bag.png');
+  width: 20px;
+  height: 20px;
   margin-right: 13px;
+}
+.bag_pressed {
+  cursor: pointer;
+  background-image: url('./assets/bag_pressed.png');
+  width: 32px;
+  height: 32px;
+  margin-top: -6px;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+}
+.bag:hover {
+  cursor: pointer;
+  background-image: url('./assets/bag.png');
+  width: 20px;
+  height: 20px;
+  transition: all ease 0.3s;
+  opacity: 0.5;
 }
 .nav {
   display: flex;
@@ -577,12 +615,14 @@ option:checked {
   cursor: pointer;
   width: 20px;
   height: 18px;
+  transition: all ease 0.3s;
 }
 .like:hover {
   background-image: url('./assets/like_hover.png');
   cursor: pointer;
   width: 20px;
   height: 18px;
+  transition: all ease 0.3s;
 }
 .eyes {
   background-image: url('./assets/eyes.png');
@@ -603,6 +643,7 @@ option:checked {
   margin-top: 15px;
   width: 24px;
   height: 24px;
+  transition: all ease 0.3s;
 }
 .likeEyes_container_frame2 {
   display: flex;
@@ -636,6 +677,7 @@ option:checked {
   margin-top: 15.5px;
   width: 20px;
   height: 18px;
+  transition: all ease 0.3s;
 }
 .eyes_frame2 {
   background-image: url('./assets/eyes.png');
@@ -656,6 +698,7 @@ option:checked {
   margin-top: 15.5px;
   width: 24px;
   height: 24px;
+  transition: all ease 0.3s;
 }
 .likeEyes_container_frame3 {
   display: flex;
@@ -689,6 +732,7 @@ option:checked {
   margin-top: 15.5px;
   width: 20px;
   height: 18px;
+  transition: all ease 0.3s;
 }
 .eyes_frame3 {
   background-image: url('./assets/eyes.png');
@@ -709,6 +753,7 @@ option:checked {
   margin-top: 15.5px;
   width: 24px;
   height: 24px;
+  transition: all ease 0.3s;
 }
 .likeEyes_container_frame4 {
   display: flex;
@@ -742,6 +787,7 @@ option:checked {
   margin-top: 15.5px;
   width: 20px;
   height: 18px;
+  transition: all ease 0.3s;
 }
 .eyes_frame4 {
   background-image: url('./assets/eyes.png');
@@ -762,6 +808,7 @@ option:checked {
   margin-top: 15.5px;
   width: 24px;
   height: 24px;
+  transition: all ease 0.3s;
 }
 .rings_sale {
   cursor: pointer;
@@ -774,11 +821,84 @@ option:checked {
   justify-content: center;
 }
 .radio {
+  background-image: url('./assets/radio.png');
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   margin: 5px;
   color: #303030;
+}
+.radio_active {
+  background-image: url('./assets/radio_background.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio:hover {
+  color: #303030;
+  opacity: 0.5;
+}
+.radio_frame2 {
+  background-image: url('./assets/radio.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame2_active {
+  background-image: url('./assets/radio_background.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame2:hover {
+  color: #303030;
+  opacity: 0.5;
+}
+.radio_frame3 {
+  background-image: url('./assets/radio.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame3_active {
+  background-image: url('./assets/radio_background.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame3:hover {
+  color: #303030;
+  opacity: 0.5;
+}
+.radio_frame4 {
+  background-image: url('./assets/radio.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame4_active {
+  background-image: url('./assets/radio_background.png');
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  color: #303030;
+}
+.radio_frame4:hover {
+  color: #303030;
+  opacity: 0.5;
 }
 .sales_first_frame {
   display: flex;
@@ -1483,6 +1603,10 @@ color: #979797;
   line-height: 100%;
   margin-left: 23px;
   margin-bottom: 10px;
+}
+.dropbtn:hover {
+  background-color: #979797;
+  transition: all ease 0.4s;
 }
 .dropdown {
   position: relative;

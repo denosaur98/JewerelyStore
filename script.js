@@ -1,4 +1,4 @@
-// Стрелка на меню выбора города
+// Стрелка на выпадающем списке выбора города
 const onOutsideClick = event => {
   const getId = event?.target?.id == 'selectId'
   const arrowValue = document.querySelector('.rectangle')
@@ -9,7 +9,9 @@ const onOutsideClick = event => {
 }
 document.addEventListener('click', onOutsideClick)
 
-// Одна и та же функция на 2 блока с кнопками
+// Одна и та же функция на 3 блока с кнопками
+
+// Кнопки под заголовком Распродажа
 let btnContainer = document.getElementById("myBtns")
 let btns = btnContainer.getElementsByClassName("btn")
 for (let i = 0; i < btns.length; i++) {
@@ -20,6 +22,7 @@ for (let i = 0; i < btns.length; i++) {
   })
 }
 
+// Кнопки под заголовком Кольцо из золота с бриллиантами
 let btnSizeBox = document.getElementById("myBox")
 let btnsSize = btnSizeBox.getElementsByClassName("box")
 for (let b = 0; b < btnsSize.length; b++) {
@@ -30,8 +33,48 @@ for (let b = 0; b < btnsSize.length; b++) {
   })
 }
 
+//Точки под кольцами в разделе Распродажа
+let radioContainer = document.getElementById("radioBlock")
+let radio = radioContainer.getElementsByClassName("radio")
+for (let c = 0; c < radio.length; c++) {
+  radio[c].addEventListener("click", function() {
+    let current = document.getElementsByClassName("radio_active")
+    current[0].className = current[0].className.replace("radio_active", "")
+    this.className += " radio_active"
+  })
+}
 
-// Одна и та же функция на 4 блока с выпадающим меню
+let radioContainerTwo = document.getElementById("radioBlockTwo")
+let radioTwo = radioContainerTwo.getElementsByClassName("radio_frame2")
+for (let d = 0; d < radioTwo.length; d++) {
+  radioTwo[d].addEventListener("click", function() {
+    let current = document.getElementsByClassName("radio_frame2_active")
+    current[0].className = current[0].className.replace("radio_frame2_active", "")
+    this.className += " radio_frame2_active"
+  })
+}
+
+let radioContainerThree = document.getElementById("radioBlockThree")
+let radioThree = radioContainerThree.getElementsByClassName("radio_frame3")
+for (let e = 0; e < radioThree.length; e++) {
+  radioThree[e].addEventListener("click", function() {
+    let current = document.getElementsByClassName("radio_frame3_active")
+    current[0].className = current[0].className.replace("radio_frame3_active", "")
+    this.className += " radio_frame3_active"
+  })
+}
+
+let radioContainerFour = document.getElementById("radioBlockFour")
+let radioFour = radioContainerFour.getElementsByClassName("radio_frame4")
+for (let f = 0; f < radioFour.length; f++) {
+  radioFour[f].addEventListener("click", function() {
+    let current = document.getElementsByClassName("radio_frame4_active")
+    current[0].className = current[0].className.replace("radio_frame4_active", "")
+    this.className += " radio_frame4_active"
+  })
+}
+
+// Одна и та же функция на 4 блока с выпадающим списком в разделе Распродажа
 function dropdownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }

@@ -18,8 +18,8 @@
           <option value="Rostov" class="option">Ростов-на-Дону</option>
         </select>
         <img src="./assets/Rectangle50.png" class="rectangle">
+      </div>
     </div>
-  </div>
     <div class="phone_container">
       <div class="phone"></div>
       <p class="number">8 800 785-25-35</p>
@@ -37,7 +37,9 @@
       <img src="./assets/Elipse.png" class="elipse">
     </div>
     <img src="./assets/chart.png" class="chart">
-    <img src="./assets/bag.png" class="bag">
+    <div class="header_imgs">
+      <div class="bag" onclick="this.className = (this.className == 'bag' ? 'bag_pressed' : 'bag')"></div>
+    </div> 
   </header>
   <nav class="nav">
     <a href="#" class="items">КАТАЛОГ</a>
@@ -114,10 +116,10 @@
           <div class="eyes"></div>
         </div>
         <img src="./assets/ring_sale1.png" class="rings_sale">
-        <div class="inp_radio">
-          <img src="./assets/radio_background.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
+        <div class="inp_radio" id="radioBlock">
+          <div class="radio radio_active"></div>
+          <div class="radio"></div>
+          <div class="radio"></div>
           <!-- <input type="radio" class="radio">
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
@@ -151,10 +153,10 @@
           <div class="eyes_frame2"></div>
         </div>
         <img src="./assets/ring_sale2.png" class="rings_sale">
-        <div class="inp_radio">
-          <img src="./assets/radio_background.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
+        <div class="inp_radio" id="radioBlockTwo">
+          <div class="radio_frame2 radio_frame2_active"></div>
+          <div class="radio_frame2"></div>
+          <div class="radio_frame2"></div>
           <!-- <input type="radio" class="radio">
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
@@ -184,10 +186,10 @@
           <div class="eyes_frame3"></div>
         </div>
         <img src="./assets/ring_sale3.png" class="rings_sale">
-        <div class="inp_radio">
-          <img src="./assets/radio_background.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
+        <div class="inp_radio" id="radioBlockThree">
+          <div class="radio_frame3 radio_frame3_active"></div>
+          <div class="radio_frame3"></div>
+          <div class="radio_frame3"></div>
           <!-- <input type="radio" class="radio">
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
@@ -217,10 +219,10 @@
           <div class="eyes_frame4"></div>
         </div>
         <img src="./assets/ring_sale4.png" class="rings_sale">
-        <div class="inp_radio">
-          <img src="./assets/radio_background.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
-          <img src="./assets/radio.png" class="radio">
+        <div class="inp_radio" id="radioBlockFour">
+          <div class="radio_frame4 radio_frame4_active"></div>
+          <div class="radio_frame4"></div>
+          <div class="radio_frame4"></div>
           <!-- <input type="radio" class="radio">
           <input type="radio" class="radio">
           <input type="radio" class="radio"> -->
