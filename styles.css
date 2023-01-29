@@ -291,35 +291,45 @@ option:checked {
   margin-right: 24px;
 }
 .arrow1 {
+  background-image: url('./assets/ComponentArrow1.png');
   cursor: pointer;
-  box-sizing: border-box;
-  width: 54px;
+  margin-right: 10px;
   height: 54px;
-}
-.arrow1_pressed {
-  background-image: url('./assets/arrow_pressed_left.png');
-  cursor: pointer;
-  box-sizing: border-box;
   width: 54px;
-  height: 54px;
-  z-index: 1;
 }
 .arrow2 {
+  background-image: url('./assets/ComponentArrow2.png');
   cursor: pointer;
+  height: 54px;
+  width: 54px;
 }
-.arrow2_pressed {
+.arrow1_pressed {
+  height: 54px;
+  width: 54px;
   background-image: url('./assets/arrow_pressed_right.png');
   cursor: pointer;
+  transform: rotate(180deg);
+  transition: all ease 0.4s;
 }
 .arrow1:hover {
-  background-image: url('./assets/arrow_hover_left.png');
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_hover_right.png');
+  transform: rotate(180deg);
+}
+.arrow2_pressed {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_pressed_right.png');
   transition: all ease 0.4s;
-  transform: scale(1.07);
 }
 .arrow2:hover {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
   background-image: url('./assets/arrow_hover_right.png');
-  transition: all ease 0.4s;
-  transform: scale(1.07);
 }
 .salesAndBtn {
   margin-top: -400px;
@@ -556,23 +566,53 @@ option:checked {
 .arrows_container_two {
   display: flex;
   justify-content: flex-end;
-  margin-top: -62px;
   margin-right: 14px;
+  margin-top: -64px;
 }
 .arrow3 {
+  background-image: url('./assets/ComponentArrow2.png');
   cursor: pointer;
   margin-right: 10px;
+  height: 54px;
+  width: 54px;
+  transform: rotate(180deg);
+}
+.arrow33 {
+  background-image: url('./assets/ComponentArrow2.png');
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+}
+.arrow33_pressed {
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_pressed_right.png');
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.arrow33:hover {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_hover_right.png');
+  transition: all ease 0.4s;
 }
 .arrow3_pressed {
   cursor: pointer;
   margin-right: 10px;
-  background-image: url('./assets/arrow_pressed_left.png');
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_pressed_right.png');
+  transform: rotate(180deg);
+  transition: all ease 0.4s;
 }
 .arrow3:hover {
   cursor: pointer;
-  background-image: url('./assets/arrow_hover_left.png');
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_hover_right.png');
+  transform: rotate(180deg);
   transition: all ease 0.4s;
-  transform: scale(1.07);
 }
 .rings_sales {
   display: flex;
@@ -1065,27 +1105,49 @@ option:checked {
   margin-top: -85px;
 }
 .arrow4 {
+  background-image: url('./assets/ComponentArrow2.png');
   cursor: pointer;
-  box-sizing: border-box;
-  width: 54px;
-  height: 54px;
   margin-right: 10px;
+  height: 54px;
+  width: 54px;
+  transform: rotate(180deg);
 }
 .arrow5 {
+  background-image: url('./assets/ComponentArrow2.png');
   cursor: pointer;
-  box-sizing: border-box;
-  width: 54px;
   height: 54px;
+  width: 54px;
 }
-.arrow4:hover {
-  background-image: url('./assets/arrow_hover_left.png');
+.arrow5_pressed {
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_pressed_right.png');
+  cursor: pointer;
   transition: all ease 0.4s;
-  transform: scale(1.07);
 }
 .arrow5:hover {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
   background-image: url('./assets/arrow_hover_right.png');
   transition: all ease 0.4s;
-  transform: scale(1.07);
+}
+.arrow4_pressed {
+  cursor: pointer;
+  margin-right: 10px;
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_pressed_right.png');
+  transform: rotate(180deg);
+  transition: all ease 0.4s;
+}
+.arrow4:hover {
+  cursor: pointer;
+  height: 54px;
+  width: 54px;
+  background-image: url('./assets/arrow_hover_right.png');
+  transform: rotate(180deg);
+  transition: all ease 0.4s;
 }
 .artikul {
   margin-left: -140px;
