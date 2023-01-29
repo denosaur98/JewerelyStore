@@ -417,34 +417,58 @@ option:checked {
   max-width: 200px;
   background-color: #F8F8F8;
   padding: 35px;
-  margin: 10px;
+  margin-right: 10px;
+}
+.object_one {
+
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  min-height: 259px;
+  min-width: 200px;
+  background-color: #F8F8F8;
 }
 .rings {
-  margin-top: 61px;
+  display: flex;
+  margin-left: 35px;
+  width: 127px;
+  height: 100px;
+  background-image: url('./assets/ring_one.png');
+  margin-top: 91px;
   padding: 1px;
+}
+.rings:hover {
+  cursor: pointer;
+  background-image: url('./assets/ring_one_hover.png');
+  width: 154px;
+  height: 121px;
+  margin-left: 22px;
+  transition: all ease 0.4s;
 }
 .earrings {
   margin-top: 46px;
-  padding: 5px
+  padding: 5px;
 }
 .rings2 {
   margin-top: 64px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 .bracelets {
   margin-top: 52px;
 }
 .necklace { 
   margin-top: 47px;
-  padding: 5px
+  padding: 5px;
 }
 .watch {
-  margin-top: 37px;
-  padding: 5px
+  margin-top: 38px;
+  padding: 5px;
+  margin-left: 5px;
 }
 .rings_txt {
   display: flex;
-  padding: 25%;
+  margin-left: 85px;
+  margin-top: -79.5px;
   text-align: center;
   font-family: 'Inter';
   font-style: normal;
@@ -452,6 +476,7 @@ option:checked {
   font-size: 16px;
   line-height: 100%;
   color: #303030;
+  margin-bottom: 200px;
 }
 .earrings_txt {
   display: flex;
@@ -468,6 +493,7 @@ option:checked {
 .rings2_txt {
   display: flex;
   margin-top: 54px;
+  margin-left: 8px;
   text-align: center;
   font-family: 'Inter';
   font-style: normal;
