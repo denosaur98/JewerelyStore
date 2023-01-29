@@ -195,3 +195,20 @@ window.onclick = function(event) {
     }
   }
 }
+
+// Открывает/закрывает инфу при клике на знак вопроса после заголовка Кольцо из золота с бриллиантами
+const element = document.querySelector(".info");
+element.style.background = '#FFFFFF';
+element.style.height = '80px';
+element.style.width = '261px';
+element.style.boxShadow = '0px 8px 20px rgba(0, 0, 0, 0.1)';
+element.style.fontFamily = 'Inter';
+element.style.fontWeight = '400';
+element.style.fontSize = '14px';
+element.style.lineHeight = '140%';
+element.style.marginTop = '-120px';
+element.style.padding = '20px';
+const button = document.querySelector(".question");
+button.addEventListener("click",() => {
+  element.classList.toggle("info");
+})

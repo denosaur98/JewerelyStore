@@ -1314,6 +1314,10 @@ option:checked {
   margin-left: -83px;
   margin-top: -28px;
 }
+.info {
+  display: none;
+  color: #303030;
+}
 .size_box {
   display: flex;
   justify-content: space-between;
