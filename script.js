@@ -78,123 +78,82 @@ for (let f = 0; f < radioFour.length; f++) {
 function dropdownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdown a')) {
+    myDropdown.classList.remove('show')
+    document.querySelector('.dropbtn').innerText = event.target.innerText
   }
-}
+})
 
 function dropdownMenuTwo() {
-  document.getElementById("myDropdown2").classList.toggle("show");
+  document.getElementById("myDropdownTwo").classList.toggle("show2");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownTwo a')) {
+    myDropdownTwo.classList.remove('show2')
+    document.querySelector('.dropbtn2').innerText = event.target.innerText
   }
-}
+})
 
 function dropdownMenuThree() {
-  document.getElementById("myDropdown3").classList.toggle("show");
+  document.getElementById("myDropdownThree").classList.toggle("show3");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownThree a')) {
+    myDropdownThree.classList.remove('show3')
+    document.querySelector('.dropbtn3').innerText = event.target.innerText
   }
-}
+})
 
 function dropdownMenuFour() {
-  document.getElementById("myDropdown4").classList.toggle("show");
+  document.getElementById("myDropdownFour").classList.toggle("show4");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownFour a')) {
+    myDropdownFour.classList.remove('show4')
+    document.querySelector('.dropbtn4').innerText = event.target.innerText
   }
-}
-
+})
 
 function dropdownSize() {
-  document.getElementById("myDropdownSize").classList.toggle("show");
+  document.getElementById("myDropdownSize").classList.toggle("show5");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownSize a')) {
+    myDropdownSize.classList.remove('show5')
+    document.querySelector('.dropbtn5').innerText = event.target.innerText
   }
-}
+})
 
-function dropdownSize2() {
-  document.getElementById("myDropdownSize2").classList.toggle("show");
+function dropdownSizeTwo() {
+  document.getElementById("myDropdownSizeTwo").classList.toggle("show6");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownSizeTwo a')) {
+    myDropdownSizeTwo.classList.remove('show6')
+    document.querySelector('.dropbtn6').innerText = event.target.innerText
   }
-}
+})
 
-function dropdownSize3() {
-  document.getElementById("myDropdownSize3").classList.toggle("show");
+function dropdownSizeThree() {
+  document.getElementById("myDropdownSizeThree").classList.toggle("show7");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownSizeThree a')) {
+    myDropdownSizeThree.classList.remove('show7')
+    document.querySelector('.dropbtn7').innerText = event.target.innerText
   }
-}
+})
 
-function dropdownSize4() {
-  document.getElementById("myDropdownSize4").classList.toggle("show");
+function dropdownSizeFour() {
+  document.getElementById("myDropdownSizeFour").classList.toggle("show8");
 }
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownSizeFour a')) {
+    myDropdownSizeFour.classList.remove('show8')
+    document.querySelector('.dropbtn8').innerText = event.target.innerText
   }
-}
+})
 
 // Открывает/закрывает инфу при клике на знак вопроса после заголовка Кольцо из золота с бриллиантами
 const element = document.querySelector(".info");
