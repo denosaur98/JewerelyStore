@@ -36,31 +36,71 @@
   margin-right: 12px;
   margin-left: 11px;
 }
-.spb {
-  cursor: pointer;
-  margin-top: -1px;
-  width: 170px;
+.dropbtnCity {
+  position: absolute;
+  white-space: none;
+  background-color: #FFFFFF;
+  margin-left: 30px;
   height: 20px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #303030;
+}
+.dropbtnCity:hover {
+  background-color: #FFFFFF;
+  transition: all ease 0.4s;
+}
+.dropdownCity {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-contentCity {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  margin-top: 30px;
+  padding: 10px;
+  width: 197px;
+  height: 164px;
   font-family: 'Inter';
   font-size: 14px;
   line-height: 14px;
-  outline: none;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  z-index: 1;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
-.spb:hover {
-  opacity: 0.7;
+.dropdown-contentCity a {
+  margin-top: -2.5px;
+  color: #303030;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
 }
-option:checked {
+.dropdown-contentCity a:hover {
+  margin-top: -2.5px;
+  background: #FAFAFA;
+  color: #303030;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
   background-color: #FAFAFA;
+}
+.showCity {
+  display:block;
+}
+.rectangle_container {
+  margin-left: 135px;
 }
 .rectangle {
   cursor: pointer;
   display: flex;
-  margin-left: -36px;
-  margin-top: 8px;
+  margin-top: 8.5px;
   width: 9px;
   height: 6px;
 }
@@ -75,7 +115,7 @@ option:checked {
   width: 15.97px;
   height: 16px;
   margin-right: 10px;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 .phone:hover {
   cursor: pointer;
@@ -83,12 +123,12 @@ option:checked {
   width: 15.97px;
   height: 16px;
   margin-right: 10px;
-  margin-left: 60px;
+  margin-left: 50px;
   transition: all ease 0.3s;
   opacity: 0.5;
 }
 .number {
-  margin-top: 2px;
+  margin-top: 3px;
   font-family: 'Inter';
   font-size: 14px;
   line-height: 14px;
@@ -123,7 +163,7 @@ option:checked {
   cursor: pointer;
   text-decoration: none;
   margin-left: 229px;
-  margin-top: 2px;
+  margin-top: 3px;
   font-family: 'Inter';
   font-size: 14px;
   line-height: 14px;

@@ -74,7 +74,17 @@ for (let f = 0; f < radioFour.length; f++) {
   })
 }
 
-// Одна и та же функция на 4 блока с выпадающим списком в разделе Распродажа
+// Одна и та же функция на 4 блока с выпадающим списком
+function dropdownCity() {
+  document.getElementById("myDropdownCity").classList.toggle("showCity");
+}
+window.addEventListener('click', function(event) {
+  if (event.target.matches('#myDropdownCity a')) {
+    myDropdownCity.classList.remove('showCity')
+    document.querySelector('.dropbtnCity').innerText = event.target.innerText
+  }
+})
+
 function dropdownMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
