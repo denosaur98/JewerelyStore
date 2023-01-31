@@ -37,6 +37,7 @@
   margin-left: 11px;
 }
 .dropbtnCity {
+  cursor: pointer;
   position: absolute;
   white-space: none;
   background-color: #FFFFFF;
@@ -98,7 +99,6 @@
   margin-left: 135px;
 }
 .rectangle {
-  cursor: pointer;
   display: flex;
   margin-top: 8.5px;
   width: 9px;

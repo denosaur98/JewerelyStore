@@ -1,13 +1,23 @@
 // Стрелка на выпадающем списке выбора города
-const onOutsideClick = event => {
-  const getId = event?.target?.id == 'selectId'
+function arrowMenu() {
+  const select = document.querySelector('.dropbtnCity')
   const arrowValue = document.querySelector('.rectangle')
-  if (!getId) {
-    arrowValue.style.transform = arrowValue.style.transform == "rotate(-180deg)" ? "rotate(0deg)" : "rotate(-180deg)"
+  const linka = document.querySelector('.a')
+  const linkb = document.querySelector('.b')
+  const linkc = document.querySelector('.c')
+  const linkd = document.querySelector('.d')
+  select.addEventListener('click', arrow)
+  function arrow() {
+    arrowValue.style.transform = arrowValue.style.transform == "rotate(0deg)" ? "rotate(-180deg)" :      "rotate(0deg)"
     arrowValue.classList.add('transition_arrow')
   }
+  arrow()
+  linka.addEventListener('click', arrow)
+  linkb.addEventListener('click', arrow)
+  linkc.addEventListener('click', arrow)
+  linkd.addEventListener('click', arrow)
 }
-document.addEventListener('click', onOutsideClick)
+arrowMenu()
 
 // Одна и та же функция на 3 блока с кнопками
 
