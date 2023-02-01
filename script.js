@@ -93,6 +93,17 @@ window.addEventListener('click', function(event) {
     myDropdownCity.classList.remove('showCity')
     document.querySelector('.dropbtnCity').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a')
+  const b = document.querySelector('.b')
+  const c = document.querySelector('.c')
+  const d = document.querySelector('.d')
+  let links = [a, b, c, d]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownMenu() {
