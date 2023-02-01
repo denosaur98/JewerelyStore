@@ -114,6 +114,16 @@ window.addEventListener('click', function(event) {
     myDropdown.classList.remove('show')
     document.querySelector('.dropbtn').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_one')
+  const b = document.querySelector('.b_one')
+  const c = document.querySelector('.c_one')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownMenuTwo() {
@@ -124,6 +134,16 @@ window.addEventListener('click', function(event) {
     myDropdownTwo.classList.remove('show2')
     document.querySelector('.dropbtn2').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_two')
+  const b = document.querySelector('.b_two')
+  const c = document.querySelector('.c_two')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownMenuThree() {
@@ -134,6 +154,16 @@ window.addEventListener('click', function(event) {
     myDropdownThree.classList.remove('show3')
     document.querySelector('.dropbtn3').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_three')
+  const b = document.querySelector('.b_three')
+  const c = document.querySelector('.c_three')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownMenuFour() {
@@ -144,6 +174,16 @@ window.addEventListener('click', function(event) {
     myDropdownFour.classList.remove('show4')
     document.querySelector('.dropbtn4').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_four')
+  const b = document.querySelector('.b_four')
+  const c = document.querySelector('.c_four')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownSize() {
@@ -154,6 +194,16 @@ window.addEventListener('click', function(event) {
     myDropdownSize.classList.remove('show5')
     document.querySelector('.dropbtn5').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_s_one')
+  const b = document.querySelector('.b_s_one')
+  const c = document.querySelector('.c_s_one')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownSizeTwo() {
@@ -164,6 +214,16 @@ window.addEventListener('click', function(event) {
     myDropdownSizeTwo.classList.remove('show6')
     document.querySelector('.dropbtn6').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_s_two')
+  const b = document.querySelector('.b_s_two')
+  const c = document.querySelector('.c_s_two')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownSizeThree() {
@@ -174,6 +234,16 @@ window.addEventListener('click', function(event) {
     myDropdownSizeThree.classList.remove('show7')
     document.querySelector('.dropbtn7').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_s_three')
+  const b = document.querySelector('.b_s_three')
+  const c = document.querySelector('.c_s_three')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 function dropdownSizeFour() {
@@ -184,6 +254,16 @@ window.addEventListener('click', function(event) {
     myDropdownSizeFour.classList.remove('show8')
     document.querySelector('.dropbtn8').innerText = event.target.innerText
   }
+  const a = document.querySelector('.a_s_four')
+  const b = document.querySelector('.b_s_four')
+  const c = document.querySelector('.c_s_four')
+  let links = [a, b, c]
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(a => a.classList.remove('checked'))
+      link.classList.add('checked')
+    })
+  })
 })
 
 // Открывает/закрывает инфу при клике на знак вопроса после заголовка Кольцо из золота с бриллиантами
